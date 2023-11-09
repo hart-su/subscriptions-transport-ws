@@ -1,6 +1,6 @@
 {
   "name": "subscriptions-transport-ws",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "description": "A websocket transport for GraphQL subscriptions",
   "main": "dist/index.js",
   "browser": "dist/client.js",
@@ -27,7 +27,8 @@
     "coverage": "node ./node_modules/istanbul/lib/cli.js cover _mocha -- --exit --full-trace ./dist/test/tests.js",
     "postcoverage": "remap-istanbul --input coverage/coverage.raw.json --type lcovonly --output coverage/lcov.info",
     "browser-compile": "webpack --config \"./unpkg-webpack.config.js\"",
-    "prepublishOnly": "npm run clean && npm run compile && npm run browser-compile"
+    "prepublishOnly": "npm run clean && npm run compile && npm run browser-compile",
+    "prepare": "npm run prepublishOnly"
   },
   "peerDependencies": {
     "graphql": "^15.7.2 || ^16.0.0"

@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.11.1 (2023-11-09)
+
+### Bug Fixes
+
+- Fix Memory leak when executing a query or mutation #805
+
 ## v0.11.0 (2021-11-02)
 
 - Support for `graphql@16` and bump minimal supported version to be `graphql@15.7.2`. As part of this change signatures for `ExecuteFunction` and `SubscribeFunction` were changed.  <br/>
